@@ -18,6 +18,8 @@
 #include <iostream>
 #include <thread>
 #include <chrono>
+//Chrono library is used to deal with date and time. This library was designed to deal with the fact that timers and clocks might be different on 
+//different systems and thus to improve over time in terms of precision.
 #include <algorithm>
 using namespace std;
 using namespace std::chrono;
