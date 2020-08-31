@@ -10,6 +10,12 @@ using namespace std;
     }
     
 
+    auto lam_fun = [](int x)
+    {
+    while(x-->0)
+        cout<< x  <<endl;
+    };
+
 int main()
 {
 //1. Function pointer
@@ -18,5 +24,15 @@ thread t2(fun, 12); //1110987654321
 t1.join();
 t2.join();
 
+//2. Lamda
+thread t3(lam_fun,5);  //433210
+t3.join();
+
+thread t4([](int x)   //LAMDA INSIDE
+{
+    while(x-->0)
+        cout<< x  <<endl;
+},3);
+t4.join();  //210
 
 }
