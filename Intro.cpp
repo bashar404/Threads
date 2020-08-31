@@ -66,6 +66,15 @@ auto duration = duration_cast<microseconds>(stopTime - startTime);
 	cout << "EvenSum : " << EvenSum << endl;
  
 cout << "Sec: " << duration.count()/1000000 << endl;  //converting to sec
+	
+	/*
+    auto start = std::chrono::steady_clock::now();
+    auto end = std::chrono::steady_clock::now();
+			//code    
+    std::chrono::duration<double> elapsed_seconds = end-start;
+    std::cout << "elapsed time: " << elapsed_seconds.count() << "s\n";
+
+	*/
  
 	return 0;
 }
