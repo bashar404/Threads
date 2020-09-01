@@ -1,4 +1,4 @@
-//Topic: Use of join(), detach() and joinable() in therad in C++ (C++ 11)
+//Topic: Use of join() double join and joinable() in therad in C++ (C++ 11)
 //join
 //1.Once a thread is started we wait until this finish
 //2.Double join will result into program termination.
