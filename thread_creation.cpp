@@ -16,6 +16,16 @@ using namespace std;
         cout<< x  <<endl;
     };
 
+    class Base
+    {
+    public:
+        static void sta_fun(int x)
+        {
+            while(x-->0)
+                cout<< x <<endl;
+        }
+    };
+
 int main()
 {
 //1. Function pointer
@@ -34,5 +44,10 @@ thread t4([](int x)   //LAMDA INSIDE
         cout<< x  <<endl;
 },3);
 t4.join();  //210
+    
+    
+//3. Static member funtion
+thread t5(&Base::sta_fun, 10);
+t5.join(); //987654321
 
 }
